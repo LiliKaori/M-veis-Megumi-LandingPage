@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Landing Page</title>
+		<style type="text/css">
+			body{
+				background: gray;
+			}
+			#landing{
+				width: 900px;
+				margin:auto;
+				background: #ffffff;
+				overflow: hidden;
+			}
+			#ad{
+				float: left;
+				width: 560px;
+				background: #e3e3e3;
+				padding-left: 40px;
+			}
+			#form{
+				float: right;
+				width:250px;
+				height: 400px;
+				margin-top: 50px;
+				margin-right: 10px;
+				background: #223365;
+				color:#ffffff;
+				padding:20px;
+			}
+			h1{
+				color: #509628;
+				font-family: helvetica, sans-serif;
+			}
+			label, input{
+				display: block;
+				margin:5px 0px;
+				font-size: 20px;
+				padding: 10px 0px;
+			}
+			input[type=text]{
+				width: 220px;
+				border:none;
+				border-radius: 5px;
+				background: #D0D8E8;
+				padding: 10px;
+			}
+			input[type=submit]{
+				background: #f2dc5d;
+				padding:10px 92px;
+				margin: 20px 0px;
+				border-radius: 5px;
+			}
+			input[type=submit]:hover{
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="landing">		
+			<div id="ad">
+				<h1>Peça uma Proposta para seus Móveis!</h1>
+				<h3>Complete os campos ao lado e aguarde nosso contato.</h3>
+				<h5>Para mais informações, ligue para 9-8435-1165. <br> Visite nosso <a href="http://moveisnaomi.com.br/Megumi/MainMegume.html" target=_self>site</a>.</h5>
+				<img src="Carrier.jpg">
+			</div>
+			<div id="form">
+				<form action="Cadastro.php" method="post">
+					<label for="nome">Nome:</label>
+					<input id="nome" type="text" placeholder="Digite seu nome" name="nome" />
+					<label for="telefone">Telefone:</label>
+					<input id="telefone" type="text" placeholder="Número de contato" name="telefone" maxlength="11" />
+					<label for="email">Email:</label>
+					<input id="email" type="text" placeholder="Digite seu email" name="email" />
+				    <input type="submit" value="Enviar"/>
+				</form>
+			</div>
+		</div>	
+	</body>
+</html>
